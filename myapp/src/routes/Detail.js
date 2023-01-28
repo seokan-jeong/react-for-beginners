@@ -1,5 +1,6 @@
-import { useCallback, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Movie from "../components/Movie";
 
 function Detail() {
   const { id } = useParams();
@@ -12,7 +13,7 @@ function Detail() {
   useEffect(() => {
     getMovie();
   }, []);
-  return <h1>Detail</h1>;
+  return <h1>detail</h1>;
 }
 
 export default Detail;
